@@ -1,0 +1,7 @@
+BOLD_path,Parent001/sub-1973001P2_ses-func05_StcMcfDetFltRegRemArfltBet.nii
+MASK_path,Parent001/sub-1973001P2_T1wFltmeanAbfcBeGM_binary_resampled.nii
+
+local_rm_thresh, 20
+dice_top_perc, 0.05
+
+output_file,ASSIGNED-sub-1973001P2-func05.nii
