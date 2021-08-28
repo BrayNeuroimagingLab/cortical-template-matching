@@ -9,6 +9,6 @@
 #SBATCH --mail-type=ALL
 #SBATCH --output="outfile.out"
 
-python groupwiseTemplate.py $file
+python3 tm.py
 
 
