@@ -24,9 +24,11 @@ Before executing the template matching procedure as described in Methods, Sectio
 populate ```parameters.csv```:
 
 ```BOLD_path``` the path to the .nii neuroimage of BOLD activations across time (the scan)
+
 ```MASK_path``` the path to the .nii binary mask of the subject with same shape as image scan.
 
 ```local_rm_thresh``` the distance threshold in scanner space that will be removed from correlates in the matching. i.e. if set to 20, any gray matter voxel less than 20mm away from the computing voxel is ommitted from its dice overlap.
+
 ```dice_top_perc``` percentage of all other correlated gray matter voxels to consider in the dice coefficient overlap. Used to filter those correlations by change.
 
 ```output_file``` the string to name the assigned template (output).
