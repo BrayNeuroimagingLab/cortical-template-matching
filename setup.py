@@ -11,6 +11,6 @@ import numpy as np
 
 
 setup(
-    ext_modules = cythonize("getRpthreaded.pyx", annotate=True, compiler_directives={'language_level':3}),
+    ext_modules = cythonize("cy_getRpthreaded.pyx", annotate=True, compiler_directives={'language_level':3}),
     include_dirs = [np.get_include()]
 )

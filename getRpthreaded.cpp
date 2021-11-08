@@ -58,6 +58,7 @@ void initThreads(double * t, float * r, size_t voxelCount, size_t time){
     const size_t thread_load = VOXELCOUNT / n_threads;
     cout << "Thread load:  " << thread_load << "  voxels \n";
 
+    pthread_t threads[n_threads];
     Params threadParams[n_threads];
     // Populate the parameter structs
     for(size_t i = 0; i < n_threads; i++){
