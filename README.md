@@ -41,3 +41,9 @@ sbatch run.sh
 
 which calls the main python file ```tm.py``` (tm = template match). Jobs usually take an hour to run.
 
+
+NOTE> the Cython is already built on the Cluster (presence of .so file). If changes are made and building again is required, before execution run:
+
+```
+python ./setup.py build_ext --inplace
+```
